@@ -1,0 +1,21 @@
+.simply-countdown {
+  overflow: hidden;
+  display: table;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  display: block;
+  text-align: center;
+}
+
+.simply-countdown > .simply-section .simply-amount {
+  font-size: 1.4rem;
+}
+
+.simply-countdown > .simply-section .simply-word {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}

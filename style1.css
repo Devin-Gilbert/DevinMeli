@@ -1,0 +1,38 @@
+h4 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-map {
+  background-color: #ffffff;
+  padding: 10px 20px 10px 20px;
+}
+
+.info1 {
+  background-color: var(--bg);
+  color: white;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.info1-row {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}

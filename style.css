@@ -1,0 +1,352 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 60px rgba(0, 0, 0, 0, 5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 400vh;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  background-attachment: fixed;
+  z-index: 10;
+}
+
+.ya {
+  z-index: 2;
+}
+
+.hero::before {
+  content: "";
+  background-image: url(img/prewed.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  filter: grayscale();
+  background-attachment: fixed;
+}
+
+.hero h1,
+.hero p,
+.hero h4 {
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.simply-countdown > .simply-section {
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 12px;
+  background: var(--bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: var(--bg);
+  border-radius: 50%;
+
+  margin-top: 24px;
+  color: white;
+}
+
+.hero h1 {
+  font-family: "Parisienne", cursive;
+  font-size: 8rem;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+.hero h4 {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--bg);
+  background-color: white;
+  margin-top: 12px;
+  padding: 20px 40px 20px 40px;
+}
+
+.hero a:hover {
+  color: white;
+  background-color: var(--bg);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.sec-2 {
+  min-height: 100vh;
+  background-image: url(img/dubai1.png);
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  filter: grayscale();
+}
+
+.judul {
+  top: 20vh;
+  font-size: 12rem;
+  font-weight: bolder;
+  font-style: italic;
+  position: sticky;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mynavbar {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+  background-color: #0a0a0a;
+}
+
+.navbar-brand,
+.offcanvas-title,
+.navbar-nav a {
+  color: white;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-brand,
+.offcanvas-title {
+  font-family: "Parisienne", cursive;
+  font-size: 2.4rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0 6px 0 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.home {
+  background-image: url(img/bunga.png);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-top: -5.2rem;
+  padding: 8rem 0 12rem 0;
+}
+
+section {
+  height: 100vh;
+}
+
+.col-md-8 {
+  color: white;
+}
+
+h2 {
+  font-family: "Parisienne", cursive;
+  font-size: 5rem;
+}
+
+.home .info-judul {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.couple {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 6rem;
+  position: relative;
+}
+
+.devin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.devin-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 6px 0 0;
+}
+
+.devin-text {
+  text-align: end;
+  margin-right: 12px;
+}
+
+.meli.text {
+  margin-left: 12px;
+}
+
+.couple .devin .devin-text .nama,
+.couple .devin .meli-text .nama {
+  font-size: 2.5rem;
+  font-family: "Parisienne", cursive;
+}
+
+.couple .devin .devin-text .info,
+.couple .devin .meli-text .info {
+  margin: 12px 0 12px 0;
+  opacity: 0.7;
+}
+
+.couple .devin .devin-text .ortu,
+.couple .devin .meli-text .ortu {
+  opacity: 0.7;
+}
+
+.bi-heart-fill {
+  position: absolute;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  color: #ba031b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding-top: 2px;
+}
+
+/* media query */
+/* laptop */
+@media (max-width: 870px) {
+  html {
+    font-size: 70%;
+  }
+
+  .simply-countdown > .simply-section {
+    width: 70px;
+    height: 70px;
+    margin: 9px;
+  }
+
+  .hero a {
+    color: var(--bg);
+    background-color: white;
+    margin-top: 9px;
+    padding: 14px 28px 14px 28px;
+  }
+}
+
+/* tablet */
+@media (max-width: 634px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    width: 65px;
+    height: 65px;
+    margin: 8px;
+  }
+
+  .hero a {
+    color: var(--bg);
+    background-color: white;
+    margin-top: 8px;
+    padding: 13px 26px 13px 26px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 6px 0 6px;
+    text-align: center;
+  }
+
+  .offcanvas-body {
+    margin-inline-end: auto;
+  }
+
+  .couple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 6rem;
+  }
+
+  .bi-heart-fill {
+    opacity: 0;
+  }
+}
+
+/* mobile */
+@media (max-width: 570px) {
+  html {
+    font-size: 50%;
+  }
+
+  .simply-countdown > .simply-section {
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+  }
+
+  .hero a {
+    color: var(--bg);
+    background-color: white;
+    margin-top: 6px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  /* ganti text align ke tengah */
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 6px 0 6px;
+    text-align: center;
+  }
+
+  /* ganti margin inlineya ke auto biar ke tengah */
+  .offcanvas-body {
+    margin-inline-end: auto;
+  }
+
+  .couple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 6rem;
+  }
+
+  .bi-heart-fill {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,200;1,300;1,800&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+  </head>
+  <body>
+    <audio autoplay>
+      <source
+        src="img/Sezairi - It's You (Official Music Video).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <section
+      id="home"
+      id="hero"
+      class="hero text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main class="ya">
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Devin & Avelie</h1>
+        <p>Akan melakukan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <section
+      class="sec-2 text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <p class="judul">In Dubai</p>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">DevAve</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DevAve</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body ms-auto">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Our Story</a>
+              <a class="nav-link" href="#galerry">Our Story</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Info" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara pernikahan</h2>
+            <h4>In Dubai December 25th 2032</h4>
+            <p class="info-judul">
+              with all pleasure we inviting you to join the our wedding party
+            </p>
+          </div>
+        </div>
+
+        <div class="couple">
+          <div class="devin">
+            <div class="devin-text">
+              <p class="nama">Devin Gilbert.N.R</p>
+              <p class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus molestiae consectetur inventore!
+              </p>
+              <p class="ortu">
+                putra dari Bpk. Tulus <br />
+                dan <br />
+                Prdede
+              </p>
+            </div>
+            <div>
+              <img class="devin-img" src="img/putin.jpg" alt="" />
+            </div>
+          </div>
+
+          <i class="bi bi-heart-fill"></i>
+
+          <div class="devin">
+            <div>
+              <img class="devin-img" src="img/gun.jpeg" alt="" />
+            </div>
+            <div class="meli-text">
+              <p class="nama">Avelie Maeliea</p>
+              <p class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus molestiae consectetur inventore!
+              </p>
+              <p class="ortu">
+                putra dari Bpk. Iwan <br />
+                dan <br />
+                Ibu Nancy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info1">
+      <div class="container">
+        <div class="info1-row justify-content-center">
+          <div class="text-center">
+            <h2>Informasi Acara</h2>
+            <h4>
+              1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai - Dubai - Uni
+              Emirat Arab
+            </h4>
+
+            <a
+              class="button-map"
+              href="https://www.google.com/maps/place/Burj+Khalifa/@25.1971969,55.2695055,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f43348a67e24b:0xff45e502e1ceb7e2!8m2!3d25.197197!4d55.2743764!16zL20vMDNjbjB2?entry=ttu"
+              target="_blank"
+            >
+              Click to open map
+            </a>
+
+            <div class="card-row">
+              <div class="card text-center text-bg-light">
+                <div class="card-header">akan nikah</div>
+                <div class="card-body">
+                  <div>
+                    <i class="bi bi-clock"></i>
+                    <p>10:00 - 12:00</p>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                    <p>10:00 - 12:00</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  saat acara diharapkan tetap kondusif
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">Featured</div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-body-secondary">2 days ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2032, // required
+        month: 12, // required
+        day: 25, // required
+        hours: 19, // Default is 0 [0-23] integer
+
+        words: {
+          //words displayed into the countdown
+          days: { singular: "day", plural: "days" },
+          hours: { singular: "hour", plural: "hours" },
+          minutes: { singular: "minute", plural: "minutes" },
+          seconds: { singular: "second", plural: "seconds" },
+        },
+        plural: true, //use plurals
+      });
+    </script>
+  </body>
+</html>
